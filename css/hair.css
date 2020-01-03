@@ -1,0 +1,116 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+.main-container{
+  height: 100vh;
+  margin: 0px 10rem;
+}
+
+/* Nav Bar */
+nav{
+  min-height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+#logo{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.activePage{
+  border-bottom: 2px solid black;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  list-style: none;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: .3s;
+  padding-bottom: 10px;
+}
+
+.nav-links a:hover{
+  border-bottom: 2px solid black;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 10%;
+}
+
+hr{
+  margin: .5rem 0px;
+}
+
+#featuredProduct{
+  margin: 2rem 0px;
+}
+
+/* Page Description */
+.pageSpan{
+  color: gray;
+}
+
+.page-description{
+  font-weight: bold;
+  margin: 2rem 0px;
+}
+
+.skincareBanner{
+  height: 55vh;
+  background: url(/img/hair2.jpg) no-repeat center center;
+}
+
+/* Skincare Product Container */
+.skinProducts-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#product{
+  height: 250px;
+  width: 300px;
+  transition: .3s;
+}
+
+#product:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.product-desc{
+  text-align: center;
+  margin: 1rem 0px;
+}
+
+#productTitle{
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

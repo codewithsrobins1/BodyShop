@@ -1,0 +1,189 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+.main-container{
+  height: 100vh;
+  margin: 0px 10rem;
+}
+
+/* Nav Bar */
+nav{
+  min-height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+#logo{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  list-style: none;
+}
+
+.activePage{
+  border-bottom: 2px solid black;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: .3s;
+  padding-bottom: 10px;
+}
+
+.nav-links a:hover{
+  border-bottom: 2px solid black;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 10%;
+}
+
+hr{
+  margin: .5rem 0px;
+}
+
+/* Page Description */
+.pageSpan{
+  color: gray;
+}
+
+.page-description{
+  font-weight: bold;
+  margin: 2rem 0px;
+}
+
+/* Feedback */
+#contactUs{
+  margin: 2rem 0px;
+}
+
+.contactUs-description{
+  text-align: center;
+}
+
+#form-title{
+  font-size: 2.5em;
+  padding: 10px;
+}
+
+.contactUs-description p{
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+form{
+  width: 70%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 30px auto; /*Auto is whats making it centered */
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5)
+}
+
+label{
+  display: block; /*block breaks up the elements */
+  padding: 15px 0px;
+}
+
+input, textarea{  /*change the size of the input areas and textarea */
+  width: 96%;
+  padding: 10px;
+  border: 1px solid transparent;
+  background-color: #ececec;
+  outline: none;
+  transition: all 0.5s;
+}
+
+input:focus, textarea:focus{
+  border: 2px solid #9BA17B;
+  background-color: #fff;
+}
+
+
+button{
+  padding: 15px 15px;
+  margin: 20px 0px;
+  border: none;
+  background-color: #9BA17B;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color .5s;
+  text-transform: uppercase;
+}
+
+button:hover{
+  background-color: #3AC7F2;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+textarea{
+  min-height: 100px;
+  max-height: 300px;
+  resize: vertical;
+}
+
+form label{
+  display: block;
+}
+
+/* Store Locations */
+#stores{
+  margin: 5rem 0px;
+}
+#stores h1{
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 3rem;
+}
+
+.stores-container{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.address{
+}
+
+.address h2{
+  padding-bottom: 1rem;
+}
+
+.phone{
+  color: dodgerblue;
+  padding: 2px 0px;
+  transition: 0.3s;
+}
+
+.phone:hover{
+  color: dodgerblue;
+  font-weight: 700;
+  padding: 2px 0px;
+}
