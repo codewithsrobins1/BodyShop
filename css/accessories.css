@@ -32,8 +32,8 @@ nav{
   color: black;
 }
 
-.activePage{
-  border-bottom: 2px solid black;
+.activeAccessories{
+  border-bottom: 4px solid #AEB6CF;
 }
 
 .nav-links{
@@ -53,7 +53,23 @@ nav{
 }
 
 .nav-links a:hover{
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
+}
+
+#skinGreen:hover{
+  border-bottom: 4px solid #9BA17B;
+}
+
+#hairPink:hover{
+  border-bottom: 4px solid #F7CAC9;
+}
+
+#fragranceYellow:hover{
+  border-bottom: 4px solid #EFC050;
+}
+
+#accessoriesBlue:hover{
+  border-bottom: 4px solid #AEB6CF;
 }
 
 .icons{
