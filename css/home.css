@@ -76,6 +76,10 @@ nav{
   width: 10%;
 }
 
+.icons i{
+  color: black;
+}
+
 hr{
   margin: .5rem 0px;
 }
@@ -127,7 +131,7 @@ hr{
 /*Products Container */
 .products-container{
   display: flex;
-  margin: 1.5rem 0px;
+  margin: 3rem 0px;
   justify-content: space-around;
 }
 

@@ -79,6 +79,11 @@ nav{
   width: 10%;
 }
 
+.icons i{
+  color: black;
+}
+
+
 hr{
   margin: .5rem 0px;
 }
