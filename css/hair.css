@@ -99,7 +99,8 @@ hr{
 
 .skincareBanner{
   height: 55vh;
-  background: url(/img/hair2.jpg) no-repeat center center;
+  background: url(/img/hair3.jpg) no-repeat center center;
+  background-position: 50% 35%;
 }
 
 /* Skincare Product Container */
