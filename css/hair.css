@@ -9,20 +9,20 @@ body{
 }
 
 .main-container{
-  height: 100vh;
-  margin: 0px 10rem;
+  height: 90vh;
+  margin: 0px 20rem;
 }
 
 /* Nav Bar */
 nav{
-  min-height: 9vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .nav-logo{
-  font-size: 1.3rem;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -32,55 +32,56 @@ nav{
   color: black;
 }
 
-.activeHair{
-  border-bottom: 4px solid #F7CAC9;
-}
-
 .nav-links{
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 45%;
   list-style: none;
 }
 
 .nav-links a{
   text-decoration: none;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1.4em;
   text-transform: uppercase;
   transition: .3s;
   padding-bottom: 10px;
 }
 
 .nav-links a:hover{
-  border-bottom: 4px solid black;
+  border-bottom: 5px solid black;
 }
 
 #skinGreen:hover{
-  border-bottom: 4px solid #9BA17B;
+  border-bottom: 5px solid #9BA17B;
 }
 
 #hairPink:hover{
-  border-bottom: 4px solid #F7CAC9;
+  border-bottom: 5px solid #F7CAC9;
 }
 
 #fragranceYellow:hover{
-  border-bottom: 4px solid #EFC050;
+  border-bottom: 5px solid #EFC050;
 }
 
 #accessoriesBlue:hover{
-  border-bottom: 4px solid #AEB6CF;
+  border-bottom: 5px solid #AEB6CF;
+}
+
+.activeHair{
+  border-bottom: 5px solid #F7CAC9;
 }
 
 .icons{
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  width: 10%;
+  width: 7%;
 }
 
 .icons i{
   color: black;
+  font-size: 1.5em;
 }
 
 
@@ -98,30 +99,37 @@ hr{
 }
 
 .page-description{
+  font-size: 1.5em;
   font-weight: bold;
   margin: 2rem 0px;
 }
 
-.skincareBanner{
-  height: 55vh;
-  background: url(/img/hair3.jpg) no-repeat center center;
-  background-position: 50% 35%;
+/* Hair Banner */
+.hairBanner{
+  height: 60vh;
+  background: url(/img/hairBanner.jpg) no-repeat center center;
+}
+
+#featuredProduct{
+  margin: 1em 0px;
 }
 
 /* Skincare Product Container */
-.skinProducts-container{
+.skinProducts-container,
+.skinProducts2-container{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 3em 0px;
 }
 
-#product{
-  height: 250px;
-  width: 300px;
+.product{
+  height: 400px;
+  width: 450px;
   transition: .3s;
 }
 
-#product:hover{
+.product:hover{
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -131,8 +139,33 @@ hr{
   margin: 1rem 0px;
 }
 
-#productTitle{
+.productTitle{
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.8em;
   font-weight: bold;
 }
+
+.productPrice{
+  font-size: 1.5em;
+  padding-top: 15px;
+}
+
+/* Media Queries */
+
+/*Small devices (phones) */
+@media screen (max-width: 375px) {
+
+};
+
+/*Medium devices (tablets) */
+@media screen (max-width: 768px) {
+};
+
+/*Large devices (laptops, 1024px and up) */
+@media screen (max-width: 1024px) {
+};
+
+
+/*Extra Large devices (Large Laptops, 1440px and up) */
+@media screen (max-width: 1440px) {
+};

@@ -9,20 +9,20 @@ body{
 }
 
 .main-container{
-  height: 100vh;
-  margin: 0px 10rem;
+  height: 90vh;
+  margin: 0px 20rem;
 }
 
 /* Nav Bar */
 nav{
-  min-height: 9vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .nav-logo{
-  font-size: 1.3rem;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -35,57 +35,57 @@ nav{
 .nav-links{
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 45%;
   list-style: none;
-}
-
-.activePage{
-  border-bottom: 4px solid black;
 }
 
 .nav-links a{
   text-decoration: none;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1.4em;
   text-transform: uppercase;
   transition: .3s;
   padding-bottom: 10px;
 }
 
 .nav-links a:hover{
-  border-bottom: 4px solid black;
+  border-bottom: 5px solid black;
+}
+
+.activePage{
+  border-bottom: 5px solid black;
 }
 
 #skinGreen:hover{
-  border-bottom: 4px solid #9BA17B;
+  border-bottom: 5px solid #9BA17B;
 }
 
 #hairPink:hover{
-  border-bottom: 4px solid #F7CAC9;
+  border-bottom: 5px solid #F7CAC9;
 }
 
 #fragranceYellow:hover{
-  border-bottom: 4px solid #EFC050;
+  border-bottom: 5px solid #EFC050;
 }
 
 #accessoriesBlue:hover{
-  border-bottom: 4px solid #AEB6CF;
+  border-bottom: 5px solid #AEB6CF;
 }
 
 .icons{
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  width: 10%;
+  width: 7%;
 }
 
 .icons i{
   color: black;
+  font-size: 1.5em;
 }
 
-
 hr{
-  margin: .5rem 0px;
+  margin: .5em 0px;
 }
 
 /* Page Description */
@@ -94,57 +94,56 @@ hr{
 }
 
 .page-description{
+  font-size: 1.5em;
   font-weight: bold;
   margin: 2rem 0px;
 }
 
-/* Main Container */
+/* Second Container */
 .second-container{
   display: flex;
   justify-content: space-between;
 }
 
 .second-description{
-  width: 40%;
+  width: 45%;
 }
 
 .second-container h1{
-  font-size: 3rem;
+  font-size: 5em;
   text-align: left;
   letter-spacing: 1.1px;
   font-weight: bold;
 }
 
 .second-container p{
-  font-size: 1.3rem;
+  font-size: 2em;
   margin-top: 3rem;
-  width: 85%;
+  width: 80%;
   letter-spacing: 1.2px;
 }
 
 .second-container img{
-  width: 550px;
-  height: 600px;
+  width: 800px;
+  height: 850px;
 }
 
 /* Quote Container */
 .quote-container{
   text-align: center;
-  padding: 6rem 0px;
+  padding: 7em 0px;
   background-color: #E0E0E0;
 }
 
-
-
 .aboutQuote{
-  font-size: 1.9rem;
+  font-size: 2.4em;
   font-style: italic;
-  width: 60%;
+  width: 45%;
   margin: 0px auto;
 }
 
 .quote-container h4{
-  font-size: 1.2rem;
+  font-size: 1.7em;
   padding-top: 2rem;
 }
 
@@ -165,7 +164,7 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 2em;
   text-transform: uppercase;
   color: black;
   transition: .3s;
@@ -218,3 +217,23 @@ hr{
   background: url('/img/testbottle.webp') no-repeat #AEB6CF;
   background-position: 50% 50%;
 }
+
+/* Media Queries */
+
+/*Small devices (phones) */
+@media screen (max-width: 375px) {
+
+};
+
+/*Medium devices (tablets) */
+@media screen (max-width: 768px) {
+};
+
+/*Large devices (laptops, 1024px and up) */
+@media screen (max-width: 1024px) {
+};
+
+
+/*Extra Large devices (Large Laptops, 1440px and up) */
+@media screen (max-width: 1440px) {
+};
