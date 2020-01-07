@@ -68,10 +68,24 @@ nav{
   border-bottom: 5px solid #AEB6CF;
 }
 
+/* Active Classes */
+#activeSkin{
+  border-bottom: 5px solid #9BA17B;
+}
+
 #activeAccessories{
   border-bottom: 5px solid #AEB6CF;
 }
 
+#activeHair{
+  border-bottom: 5px solid #F7CAC9;
+}
+
+#activeFragrance{
+  border-bottom: 5px solid #EFC050;
+}
+
+/* Nav Icons */
 .icons{
   display: flex;
   justify-content: space-between;
@@ -99,19 +113,34 @@ hr{
   margin: 2rem 0px;
 }
 
-/* Banner */
-.skincareBanner{
+/* Banners */
+#skincareBanner{
+  height: 60vh;
+  background: url(/img/skinBanner.jpg) no-repeat center center;
+}
+
+#hairBanner{
+  height: 60vh;
+  background: url(/img/hairBanner.jpg) no-repeat center center;
+}
+
+#fragranceBanner{
+  height: 60vh;
+  background: url(/img/fragranceBanner.jpg) no-repeat center center;
+}
+
+#accessorieseBanner{
   height: 60vh;
   background: url(/img/accessoryBanner.jpg) no-repeat center center;
 }
 
-#featuredProduct{
+.featuredProduct{
   margin: 1em 0px;
 }
 
-/* Skincare Product Container */
-.skinProducts-container,
-.skinProducts2-container{
+/* Product Container */
+.allProducts-container,
+.allProducts2-container{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
