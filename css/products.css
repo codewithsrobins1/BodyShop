@@ -69,19 +69,19 @@ nav{
 }
 
 /* Active Classes */
-#activeSkin{
+.activeSkin{
   border-bottom: 5px solid #9BA17B;
 }
 
-#activeAccessories{
+.activeAccessories{
   border-bottom: 5px solid #AEB6CF;
 }
 
-#activeHair{
+.activeHair{
   border-bottom: 5px solid #F7CAC9;
 }
 
-#activeFragrance{
+.activeFragrance{
   border-bottom: 5px solid #EFC050;
 }
 
@@ -129,7 +129,7 @@ hr{
   background: url(/img/fragranceBanner.jpg) no-repeat center center;
 }
 
-#accessorieseBanner{
+#accessoryBanner{
   height: 60vh;
   background: url(/img/accessoryBanner.jpg) no-repeat center center;
 }

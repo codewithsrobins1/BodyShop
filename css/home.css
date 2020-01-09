@@ -21,6 +21,11 @@ nav{
   align-items: center;
 }
 
+nav ul{
+  list-style: none;
+}
+
+
 .nav-logo{
   font-size: 1.5em;
   text-transform: uppercase;
@@ -35,8 +40,31 @@ nav{
 .nav-links{
   display: flex;
   justify-content: space-between;
-  width: 45%;
+  width: 20%;
   list-style: none;
+}
+
+.dropDown{
+  height: 50px;
+  line-height: 35px;
+  display: none;
+  font-size: 15px;
+}
+
+#menu a{
+  border-bottom: none;
+  transition: .3s;
+}
+
+#menu:hover .dropDown{
+  display: block;
+  position: fixed;
+  height: 13em;
+  background-color: #ececec;
+}
+
+#menu:hover .dropDown li{
+  padding: 5px 10px;
 }
 
 .nav-links a{
@@ -45,7 +73,7 @@ nav{
   font-size: 1.4em;
   text-transform: uppercase;
   transition: .3s;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .nav-links a:hover{
@@ -229,21 +257,694 @@ hr{
 }
 
 /* Media Queries */
-
 /*Small devices (phones) */
-@media screen (max-width: 375px) {
+@media (max-width: 375px) {
+  .main-container{
+    height: 100vh;
+    width: 100%;
+    margin: 0px 2em;
+  }
 
+  /* Nav Bar */
+  .nav-logo{
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  #logo{
+    list-style: none;
+    text-decoration: none;
+  }
+
+  #menu a{
+    border-bottom: none;
+    transition: .3s;
+  }
+
+  .dropDown{
+    height: 50px;
+    line-height: 35px;
+    display: none;
+    font-size: 15px;
+  }
+
+  #menu:hover .dropDown{
+    display: block;
+    position: fixed;
+    height: 10.5em;
+    background-color: #ececec;
+  }
+
+  #menu:hover .dropDown li{
+    padding: 2px 5px;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 36%;
+    list-style: none;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 9px;
+    text-transform: uppercase;
+    transition: .3s;
+    padding-bottom: 10px;
+  }
+
+  .nav-links a:hover{
+    border-bottom: 5px solid black;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 20%;
+  }
+
+  .icons i{
+    color: black;
+    font-size: 12px;
+  }
+
+  /* Page Description */
+  .page-description{
+    font-size: 1.0em;
+    font-weight: bold;
+    margin: 2rem 0px;
+  }
+
+  /* Second Container */
+  .second-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .second-description{
+    width: 100%;
+  }
+
+  .second-container h1{
+    font-size: 2.0em;
+    text-align: left;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+  }
+
+  .second-container p{
+    font-size: 14px;
+    margin-top: 1rem;
+    width: 80%;
+    letter-spacing: 1.2px;
+  }
+
+  .second-container img{
+    width: 275px;
+    height: 225px;
+  }
+
+  /* Question Container */
+  .question-container{
+    margin: 2em 0px;
+  }
+
+  .question-container h1{
+    font-size: 1.5em;
+  }
+
+  .products-container img{
+    width: 50px;
+    height: 50px;
+  }
+
+  /*Products Container */
+  .products-container{
+    display: flex;
+    margin: 3em 0px;
+    justify-content: space-around;
+  }
+
+  .product{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .product h4{
+    margin-top: 1em;
+    font-size: 1.0rem;
+  }
+
+  /* Products Showcase */
+  .product-showcase{
+    margin-top: 8em;
+    height: 0vh;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .prodDesc{
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .product1-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #F7CAC9;
+    background-position: 50% 50%;
+
+  }
+
+  .product2-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #EFC050;
+    background-position: 50% 50%;
+  }
+
+  .product3-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #9BA17B;
+    background-position: 50% 50%;
+  }
+
+  .product4-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #AEB6CF;
+    background-position: 50% 50%;
+  }
 };
 
 /*Medium devices (tablets) */
-@media screen (max-width: 768px) {
+@media (max-width: 768px) {
+  .main-container{
+    height: 75vh;
+    margin: 0px 7rem;
+  }
+
+  /* Nav Bar */
+  .nav-logo{
+    font-size: 1.0em;
+    text-transform: uppercase;
+  }
+
+  #logo{
+    list-style: none;
+    text-decoration: none;
+  }
+
+  #menu a{
+    border-bottom: none;
+    transition: .3s;
+  }
+
+  .dropDown{
+    height: 50px;
+    line-height: 35px;
+    display: none;
+    font-size: 15px;
+  }
+
+  #menu:hover .dropDown{
+    display: block;
+    position: fixed;
+    height: 10.5em;
+    background-color: #ececec;
+  }
+
+  #menu:hover .dropDown li{
+    padding: 2px 5px;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    list-style: none;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: .3s;
+    padding-bottom: 10px;
+  }
+
+  .nav-links a:hover{
+    border-bottom: 5px solid black;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 15%;
+  }
+
+  .icons i{
+    color: black;
+    font-size: 1em;
+  }
+
+  /* Page Description */
+  .page-description{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 2rem 0px;
+  }
+
+  /* Second Container */
+  .second-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .second-description{
+    width: 100%;
+  }
+
+  .second-container h1{
+    font-size: 2.0em;
+    text-align: left;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+  }
+
+  .second-container p{
+    font-size: 14px;
+    margin-top: 1rem;
+    width: 80%;
+    letter-spacing: 1.2px;
+  }
+
+  .second-container img{
+    width: 275px;
+    height: 225px;
+  }
+
+  /* Question Container */
+  .question-container{
+    margin: 2em 0px;
+  }
+
+  .question-container h1{
+    font-size: 1.5em;
+  }
+
+  .products-container img{
+    width: 50px;
+    height: 50px;
+  }
+
+  /*Products Container */
+  .products-container{
+    display: flex;
+    margin: 3em 0px;
+    justify-content: space-around;
+  }
+
+  .product{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .product h4{
+    margin-top: 1em;
+    font-size: 1.0rem;
+  }
+
+  /* Products Showcase */
+  .product-showcase{
+    margin-top: 8em;
+    height: 0vh;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .prodDesc{
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .product1-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #F7CAC9;
+    background-position: 50% 50%;
+
+  }
+
+  .product2-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #EFC050;
+    background-position: 50% 50%;
+  }
+
+  .product3-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #9BA17B;
+    background-position: 50% 50%;
+  }
+
+  .product4-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #AEB6CF;
+    background-position: 50% 50%;
+  }
 };
 
 /*Large devices (laptops, 1024px and up) */
-@media screen (max-width: 1024px) {
+@media (max-width: 1024px) {
+  .main-container{
+    height: 90vh;
+    margin: 0px 10rem;
+  }
+
+  /* Nav Bar */
+  .nav-logo{
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+
+  #logo{
+    list-style: none;
+    text-decoration: none;
+  }
+
+  #menu a{
+    border-bottom: none;
+    transition: .3s;
+  }
+
+  .dropDown{
+    height: 50px;
+    line-height: 35px;
+    display: none;
+    font-size: 15px;
+  }
+
+  #menu:hover .dropDown{
+    display: block;
+    position: fixed;
+    height: 10.5em;
+    background-color: #ececec;
+  }
+
+  #menu:hover .dropDown li{
+    padding: 2px 5px;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    list-style: none;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    transition: .3s;
+    padding-bottom: 10px;
+  }
+
+  .nav-links a:hover{
+    border-bottom: 5px solid black;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 10%;
+  }
+
+  .icons i{
+    color: black;
+    font-size: 1.1em;
+  }
+
+  /* Page Description */
+  .page-description{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 2rem 0px;
+  }
+
+  /* Second Container */
+  .second-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .second-description{
+    width: 100%;
+  }
+
+  .second-container h1{
+    font-size: 2.2em;
+    text-align: left;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+  }
+
+  .second-container p{
+    font-size: 1.1em;
+    margin-top: 2rem;
+    width: 80%;
+    letter-spacing: 1.2px;
+  }
+
+  .second-container img{
+    width: 350px;
+    height: 300px;
+  }
+
+  /* Question Container */
+  .question-container{
+    margin: 2em 0px;
+  }
+
+  .question-container h1{
+    font-size: 1.5em;
+  }
+
+  .products-container img{
+    width: 50px;
+    height: 50px;
+  }
+
+  /*Products Container */
+  .products-container{
+    display: flex;
+    margin: 5em 0px;
+    justify-content: space-around;
+  }
+
+  .product{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .product h4{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  /* Products Showcase */
+  .product-showcase{
+    margin-top: 8em;
+    height: 10vh;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .prodDesc{
+    font-size: 16px;
+  }
+
+  .product1-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #F7CAC9;
+    background-position: 50% 50%;
+
+  }
+
+  .product2-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #EFC050;
+    background-position: 50% 50%;
+  }
+
+  .product3-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #9BA17B;
+    background-position: 50% 50%;
+  }
+
+  .product4-container{
+    height: 40vh;
+    width: 50vh;
+    background: url('/img/testbottle.webp') no-repeat #AEB6CF;
+    background-position: 50% 50%;
+  }
 };
 
-
 /*Extra Large devices (Large Laptops, 1440px and up) */
-@media screen (max-width: 1440px) {
+@media (max-width: 1440px) {
+  .main-container{
+    height: 90vh;
+    margin: 0px 10rem;
+  }
+
+  /* Nav Bar */
+  nav{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo{
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+
+  #logo{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    list-style: none;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: .3s;
+    padding-bottom: 10px;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 8%;
+  }
+
+  .icons i{
+    color: black;
+    font-size: 1.2em;
+  }
+
+  /* Page Description */
+  .page-description{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 2rem 0px;
+  }
+
+  /* Second Container */
+  .second-description{
+    width: 50%;
+  }
+
+  .second-container h1{
+    font-size: 3.2em;
+    text-align: left;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+  }
+
+  .second-container p{
+    font-size: 1.4em;
+    margin-top: 3rem;
+    width: 80%;
+    letter-spacing: 1.2px;
+  }
+
+  .second-container img{
+    width: 550px;
+    height: 400px;
+  }
+
+  /* Question Container */
+  .question-container{
+    margin: 3em 0px;
+  }
+
+  .question-container h1{
+    font-size: 2.0em;
+  }
+
+  /* Products Showcase */
+  .product-showcase{
+    margin-top: 7em;
+    height: 10vh;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .product1-container{
+    height: 30vh;
+    width: 40vh;
+    background: url('/img/testbottle.webp') no-repeat #F7CAC9;
+    background-position: 50% 50%;
+
+  }
+
+  .product2-container{
+    height: 30vh;
+    width: 40vh;
+    background: url('/img/testbottle.webp') no-repeat #EFC050;
+    background-position: 50% 50%;
+  }
+
+  .product3-container{
+    height: 30vh;
+    width: 40vh;
+    background: url('/img/testbottle.webp') no-repeat #9BA17B;
+    background-position: 50% 50%;
+  }
+
+  .product4-container{
+    height: 30vh;
+    width: 40vh;
+    background: url('/img/testbottle.webp') no-repeat #AEB6CF;
+    background-position: 50% 50%;
+  }
 };
