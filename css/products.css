@@ -6,190 +6,890 @@
 
 body{
   font-family: 'Rubik', sans-serif;
+  width: 100%;
 }
 
 .main-container{
-  height: 90vh;
-  margin: 0px 20rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
-/* Nav Bar */
-nav{
-  min-height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Gradient transparent - color - transparent */
+#hrStyle{
+    border: 0;
+    margin: 4rem 0px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.nav-logo{
-  font-size: 1.5em;
-  text-transform: uppercase;
+/* Mobile -> Large */
+@media only screen and (max-width: 375px){
+  body{
+    overflow-x: hidden; /* Removes the scroll from transform */
+  }
+
+  /* Nav Bar */
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+  }
+
+  #logo{
+    font-size: .8em;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #ececec;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(100%); /* Moves container off the screen */
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+  }
+
+  .nav-links li{
+    list-style: none;
+    opacity: 0;
+  }
+
+  .burger-menu{
+    cursor: pointer;
+  }
+
+  .burger-menu div{
+    width: 1.3em;
+    height: .3em;
+    background-color: black;
+    margin: .2em;
+    transition: all 0.3s ease;
+  }
+
+  .nav-active{
+    transform: translateX(0%); /* Class given to .burger-menu when clicking burger menu to move container back */
+  }
+
+  @keyframes navLinkFade {
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  /* Burger Animation */
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2{
+    opacity: 0;
+  }
+
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Page description */
+  .page-description{
+    text-align: left;
+    padding: 1em 0px;
+    font-size: 1em;
+    font-weight: 800;
+  }
+
+  .pageSpan{
+    color: #006400;
+    font-weight: bold;
+  }
+
+  /* Product Banner */
+  #productBanner img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5em;
+  }
+
+  /* Products */
+  .product{
+  width: 100%;
+  height: auto;
+  }
+
+  .items-container{
+    margin: 2em 0px;
+  }
+
+  .product-desc{
+    text-align: center;
+    padding-top: .9em;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  .productTitle{
+    font-style: italic;
+  }
 }
 
-#logo{
-  list-style: none;
-  text-decoration: none;
-  color: black;
+  /* Tablet */
+  @media only screen and (max-width: 768px){
+    /* Nav Bar */
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 8vh;
+    }
+
+    #logo{
+      font-size: 1em;
+      text-decoration: none;
+      color: black;
+    }
+
+    .nav-links{
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #ececec;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      transform: translateX(100%); /* Moves container off the screen */
+      transition: transform 0.5s ease-in;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.4em;
+    }
+
+    .nav-links li{
+      list-style: none;
+      opacity: 0;
+    }
+
+    .burger-menu{
+      cursor: pointer;
+    }
+
+    .burger-menu div{
+      width: 1.3em;
+      height: .3em;
+      background-color: black;
+      margin: .2em;
+      transition: all 0.3s ease;
+    }
+
+    .nav-active{
+      transform: translateX(0%); /* Class given to .burger-menu when clicking burger menu to move container back */
+    }
+
+    @keyframes navLinkFade {
+      from{
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to{
+        opacity: 1;
+      }
+    }
+
+    /* Burger Animation */
+    .toggle .line1{
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2{
+      opacity: 0;
+    }
+
+    .toggle .line3{
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Page description */
+    .page-description{
+      text-align: left;
+      padding: 1.2em 0px;
+      font-size: 1em;
+      font-weight: 800;
+    }
+
+    .pageSpan{
+      color: #006400;
+      font-weight: bold;
+    }
+
+    /* Product Banner */
+    #productBanner img{
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.5em;
+    }
+
+    /* Products */
+    .product{
+    width: 100%;
+    height: auto;
+    }
+
+    .items-container{
+      margin: 2em 0px;
+    }
+
+    .product-desc{
+      text-align: center;
+      padding-top: .9em;
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+  }
+
+  /* Lose the Hamburger Icon */
+  @media only screen and (min-width: 769px){
+    /* Nav Bar */
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 8vh;
+    }
+
+    #logo{
+      font-size: 1.2em;
+      text-decoration: none;
+      color: black;
+    }
+
+    .burger-menu{
+      display: none;
+    }
+
+    nav ul{
+      list-style: none;
+    }
+
+    .nav-links{
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
+      list-style: none;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+    }
+
+    .nav-links li{
+      transition: .4s;
+      border-bottom: 3px solid transparent;
+    }
+
+    .nav-links li:hover{
+      border-bottom: 3px solid black;
+      cursor: pointer;
+    }
+
+    hr{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Page description */
+    .page-description{
+      text-align: left;
+      padding: 1.2em 0px;
+      font-size: 1.3em;
+      font-weight: 800;
+    }
+
+    .pageSpan{
+      color: #006400;
+      font-weight: bold;
+    }
+
+    /* Product Banner */
+    #productBanner img{
+      width: 100%;
+      height: auto;
+      max-height: 30em;
+      margin-bottom: 1.5em;
+    }
+
+    /* Products */
+    .product{
+    width: 100%;
+    height: auto;
+    transition: .4s;
+    }
+
+    .product:hover{
+      transform: scale(1.08);
+    }
+
+    .items-container{
+      margin: 2em 0px;
+    }
+
+    .product-desc{
+      text-align: center;
+      padding-top: .9em;
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+  }
+
+  @media only screen and (min-width: 1024px){
+    /* Nav Bar */
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 8vh;
+    }
+
+    #logo{
+      font-size: 1.2em;
+      text-decoration: none;
+      color: black;
+    }
+
+    .burger-menu{
+      display: none;
+    }
+
+    nav ul{
+      list-style: none;
+    }
+
+    .nav-links{
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
+      list-style: none;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+    }
+
+    .nav-links li{
+      transition: .4s;
+      border-bottom: 3px solid transparent;
+    }
+
+    .nav-links li:hover{
+      border-bottom: 3px solid black;
+      cursor: pointer;
+    }
+
+    hr{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Page description */
+    .page-description{
+      text-align: left;
+      padding: 1.2em 0px;
+      font-size: 1.3em;
+      font-weight: 800;
+    }
+
+    .pageSpan{
+      color: #006400;
+      font-weight: bold;
+    }
+
+    /* Product Banner */
+    #productBanner img{
+      width: 100%;
+      height: auto;
+      max-height: 30em;
+      margin-bottom: 1.5em;
+    }
+
+    /* Products */
+    .product{
+    width: 100%;
+    max-width: 25em;
+    max-height: 25em;
+    height: auto;
+    }
+
+    .product-container{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .product-desc{
+      text-align: center;
+      padding-top: .9em;
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+  }
+
+
+  @media only screen and (min-width: 1200px){
+    /* Nav Bar */
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 8vh;
+    }
+
+    #logo{
+      font-size: 1.2em;
+      text-decoration: none;
+      color: black;
+    }
+
+    .burger-menu{
+      display: none;
+    }
+
+    nav ul{
+      list-style: none;
+    }
+
+    .nav-links{
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
+      list-style: none;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+    }
+
+    .nav-links li{
+      transition: .4s;
+      border-bottom: 3px solid transparent;
+    }
+
+    .nav-links li:hover{
+      border-bottom: 3px solid black;
+      cursor: pointer;
+    }
+
+    hr{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Page description */
+    .page-description{
+      text-align: left;
+      padding: 1.2em 0px;
+      font-size: 1.3em;
+      font-weight: 800;
+    }
+
+    .pageSpan{
+      color: #006400;
+      font-weight: bold;
+    }
+
+    /* Product Banner */
+    #productBanner img{
+      width: 100%;
+      height: auto;
+      max-height: 35em;
+      margin-bottom: 1.5em;
+    }
+
+    /* Products */
+    .product{
+    width: 100%;
+    max-width: 25em;
+    max-height: 25em;
+    height: auto;
+    }
+
+    .product-container{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .product-desc{
+      text-align: center;
+      padding-top: .9em;
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+  }
+
+  @media only screen and (min-width: 1500px){
+    /* Nav Bar */
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 8vh;
+    }
+
+    #logo{
+      font-size: 1.2em;
+      text-decoration: none;
+      color: black;
+    }
+
+    .burger-menu{
+      display: none;
+    }
+
+    nav ul{
+      list-style: none;
+    }
+
+    .nav-links{
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
+      list-style: none;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+    }
+
+    .nav-links li{
+      transition: .4s;
+      border-bottom: 3px solid transparent;
+    }
+
+    .nav-links li:hover{
+      border-bottom: 3px solid black;
+      cursor: pointer;
+    }
+
+    hr{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Page description */
+    .page-description{
+      text-align: left;
+      padding: 1.2em 0px;
+      font-size: 1.3em;
+      font-weight: 800;
+    }
+
+    .pageSpan{
+      color: #006400;
+      font-weight: bold;
+    }
+
+    /* Product Banner */
+    #productBanner img{
+      width: 100%;
+      height: auto;
+      max-height: 30em;
+      margin-bottom: 1.5em;
+    }
+
+    /* Products */
+    .product{
+    width: 100%;
+    max-width: 30em;
+    max-height: 30em;
+    height: auto;
+    }
+
+    .product-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+    }
+
+    .product-desc{
+    text-align: center;
+    padding-top: .9em;
+    font-size: 1.3em;
+    font-weight: 500;
+    }
+  }
+
+  @media only screen and (min-width: 1800px){
+    /* Nav Bar */
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 8vh;
+    }
+
+    #logo{
+      font-size: 1.3em;
+      text-decoration: none;
+      color: black;
+    }
+
+    .burger-menu{
+      display: none;
+    }
+
+    nav ul{
+      list-style: none;
+    }
+
+    .nav-links{
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      list-style: none;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.3em;
+    }
+
+    .nav-links li{
+      transition: .4s;
+      border-bottom: 3px solid transparent;
+    }
+
+    .nav-links li:hover{
+      border-bottom: 3px solid black;
+      cursor: pointer;
+    }
+
+    hr{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Page description */
+    .page-description{
+      text-align: left;
+      padding: 1.2em 0px;
+      font-size: 1.3em;
+      font-weight: 800;
+    }
+
+    .pageSpan{
+      color: #006400;
+      font-weight: bold;
+    }
+
+    /* Product Banner */
+    #productBanner img{
+      width: 100%;
+      height: auto;
+      max-height: 35em;
+      margin-bottom: 1.5em;
+    }
+
+    /* Products */
+    .product{
+    width: 100%;
+    max-width: 30em;
+    max-height: 30em;
+    height: auto;
+    }
+
+    .product-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+    }
+
+    .product-desc{
+    text-align: center;
+    padding-top: .9em;
+    font-size: 1.4em;
+    font-weight: 500;
+    }
+  }
+
+  @media only screen and (min-width: 2200px){
+    /* Nav Bar */
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 8vh;
+    }
+
+    #logo{
+      font-size: 1.4em;
+      text-decoration: none;
+      color: black;
+    }
+
+    .burger-menu{
+      display: none;
+    }
+
+    nav ul{
+      list-style: none;
+    }
+
+    #logo{
+      font-size: 1.2em;
+      text-decoration: none;
+      color: black;
+    }
+
+    .nav-links{
+      display: flex;
+      justify-content: space-between;
+      width: 25%;
+      list-style: none;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+    }
+
+    .nav-links li{
+      transition: .4s;
+      border-bottom: 3px solid transparent;
+    }
+
+    .nav-links li:hover{
+      border-bottom: 3px solid black;
+      cursor: pointer;
+    }
+
+    hr{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Page description */
+    .page-description{
+      text-align: left;
+      padding: 1.2em 0px;
+      font-size: 1.5em;
+      font-weight: 800;
+    }
+
+    .pageSpan{
+      color: #006400;
+      font-weight: bold;
+    }
+
+    /* Product Banner */
+    #productBanner img{
+      width: 100%;
+      height: auto;
+      max-height: 40em;
+      margin-bottom: 1.5em;
+    }
+
+    /* Products */
+    .beautyProduct{
+      margin: .8em 0px;
+    }
+
+    .product{
+      width: 100%;
+      max-width: 30em;
+      max-height: 25em;
+      height: auto;
+      transition: .5s;
+    }
+
+    .product-container{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 57%;
+      margin: 0 auto;
+    }
+
+    .product-desc{
+      text-align: center;
+      padding-top: .9em;
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-.nav-links{
-  display: flex;
-  justify-content: space-between;
-  width: 45%;
-  list-style: none;
-}
-
-.nav-links a{
-  text-decoration: none;
-  color: black;
-  font-size: 1.4em;
-  text-transform: uppercase;
-  transition: .3s;
-  padding-bottom: 10px;
-}
-
-.nav-links a:hover{
-  border-bottom: 5px solid black;
-}
-
-#skinGreen:hover{
-  border-bottom: 5px solid #9BA17B;
-}
-
-#hairPink:hover{
-  border-bottom: 5px solid #F7CAC9;
-}
-
-#fragranceYellow:hover{
-  border-bottom: 5px solid #EFC050;
-}
-
-#accessoriesBlue:hover{
-  border-bottom: 5px solid #AEB6CF;
-}
-
-/* Active Classes */
-.activeSkin{
-  border-bottom: 5px solid #9BA17B;
-}
-
-.activeAccessories{
-  border-bottom: 5px solid #AEB6CF;
-}
-
-.activeHair{
-  border-bottom: 5px solid #F7CAC9;
-}
-
-.activeFragrance{
-  border-bottom: 5px solid #EFC050;
-}
-
-/* Nav Icons */
-.icons{
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  width: 7%;
-}
-
-.icons i{
-  color: black;
-  font-size: 1.5em;
-}
-
-hr{
-  margin: .5em 0px;
-}
-
-/* Page Description */
-.pageSpan{
-  color: gray;
-}
-
-.page-description{
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 2rem 0px;
-}
-
-/* Banners */
-#skincareBanner{
-  height: 60vh;
-  background: url(/img/skinBanner.jpg) no-repeat center center;
-}
-
-#hairBanner{
-  height: 60vh;
-  background: url(/img/hairBanner.jpg) no-repeat center center;
-}
-
-#fragranceBanner{
-  height: 60vh;
-  background: url(/img/fragranceBanner.jpg) no-repeat center center;
-}
-
-#accessoryBanner{
-  height: 60vh;
-  background: url(/img/accessoryBanner.jpg) no-repeat center center;
-}
-
-.featuredProduct{
-  margin: 1em 0px;
-}
-
-/* Product Container */
-.allProducts-container,
-.allProducts2-container{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 3em 0px;
-}
-
-.product{
-  height: 400px;
-  width: 450px;
-  transition: .3s;
-}
-
-.product:hover{
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.product-desc{
-  text-align: center;
-  margin: 1rem 0px;
-}
-
-.productTitle{
-  font-style: italic;
-  font-size: 1.8em;
-  font-weight: bold;
-}
-
-.productPrice{
-  font-size: 1.5em;
-  padding-top: 15px;
-}
-
-/* Media Queries */
-
-/*Small devices (phones) */
-@media screen (max-width: 375px) {
-
-};
-
-/*Medium devices (tablets) */
-@media screen (max-width: 768px) {
-};
-
-/*Large devices (laptops, 1024px and up) */
-@media screen (max-width: 1024px) {
-};
-
-
-/*Extra Large devices (Large Laptops, 1440px and up) */
-@media screen (max-width: 1440px) {
-};

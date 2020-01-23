@@ -6,847 +6,433 @@
 
 body{
   font-family: 'Rubik', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+
 }
 
 .main-container{
-  height: 90vh;
-  margin: 0px 20rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
-/* Nav Bar */
-nav{
-  min-height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul{
-  list-style: none;
-}
-
-
-.nav-logo{
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
-
-#logo{
-  list-style: none;
-  text-decoration: none;
-  color: black;
-}
-
-.nav-links{
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-  list-style: none;
-}
-
-.dropDown{
-  height: 50px;
-  line-height: 35px;
-  display: none;
-  font-size: 15px;
-}
-
-#menu a{
-  border-bottom: none;
-  transition: .3s;
-}
-
-#menu:hover .dropDown{
-  display: block;
-  position: fixed;
-  height: 13em;
-  background-color: #ececec;
-}
-
-#menu:hover .dropDown li{
-  padding: 5px 10px;
-}
-
-.nav-links a{
-  text-decoration: none;
-  color: black;
-  font-size: 1.4em;
-  text-transform: uppercase;
-  transition: .3s;
-  padding-bottom: 5px;
-}
-
-.nav-links a:hover{
-  border-bottom: 5px solid black;
-}
-
-#skinGreen:hover{
-  border-bottom: 5px solid #9BA17B;
-}
-
-#hairPink:hover{
-  border-bottom: 5px solid #F7CAC9;
-}
-
-#fragranceYellow:hover{
-  border-bottom: 5px solid #EFC050;
-}
-
-#accessoriesBlue:hover{
-  border-bottom: 5px solid #AEB6CF;
-}
-
-.icons{
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  width: 7%;
-}
-
-.icons i{
-  color: black;
-  font-size: 1.5em;
-}
-
-hr{
-  margin: .5em 0px;
-}
-
-/* Page Description */
-.pageSpan{
-  color: gray;
-}
-
-.page-description{
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 2rem 0px;
-}
-
-/* Second Container */
-.second-container{
-  display: flex;
-  justify-content: space-between;
-}
-
-.second-description{
-  width: 45%;
-}
-
-.second-container h1{
-  font-size: 6.2em;
-  text-align: left;
-  letter-spacing: 1.1px;
-  font-weight: bold;
-}
-
-.second-container p{
-  font-size: 2.3em;
-  margin-top: 3rem;
-  width: 80%;
-  letter-spacing: 1.2px;
-}
-
-.second-container img{
-  width: 900px;
-  height: 650px;
-}
-
-/* Question Container */
-.question-container{
-  margin: 3em 0px;
-}
-
-.question-container h1{
-  font-size: 2.4em;
-}
-
-/*Products Container */
-.products-container{
-  display: flex;
-  margin: 5em 0px;
-  justify-content: space-around;
-}
-
-.product{
-  margin: 0px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-}
-
-.products-container img{
-  width: 100px;
-  height: 100px;
-}
-
-.product h4{
-  margin-top: 2rem;
-  font-size: 1.2rem;
-}
-
-/* Products Showcase */
-.product-showcase{
-  margin-top: 9em;
-  height: 50vh;
-  display: flex;
-  cursor: pointer;
-}
-
-.product1-container,
-.product2-container,
-.product3-container,
-.product4-container
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  color: black;
-  transition: .3s;
-  text-decoration: none;
-}
-
-.product1-container:hover,
-.product2-container:hover,
-.product3-container:hover,
-.product4-container:hover
-{
-  transform: scale(.9);
-}
-
-
-.product1-container h5,
-.product2-container h5,
-.product3-container h5,
-.product4-container h5
-{
-  font-weight: 600;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-
-.product1-container{
-  height: 50vh;
-  width: 60vh;
-  background: url('/img/testbottle.webp') no-repeat #F7CAC9;
-  background-position: 50% 50%;
-
-}
-
-.product2-container{
-  height: 50vh;
-  width: 60vh;
-  background: url('/img/testbottle.webp') no-repeat #EFC050;
-  background-position: 50% 50%;
-}
-
-.product3-container{
-  height: 50vh;
-  width: 60vh;
-  background: url('/img/testbottle.webp') no-repeat #9BA17B;
-  background-position: 50% 50%;
-}
-
-.product4-container{
-  height: 50vh;
-  width: 60vh;
-  background: url('/img/testbottle.webp') no-repeat #AEB6CF;
-  background-position: 50% 50%;
-}
-
-/* Media Queries */
-/*Small devices (phones) */
-@media (max-width: 375px) {
-  .main-container{
-    height: 100vh;
-    width: 100%;
-    margin: 0px 2em;
-  }
-
-  /* Nav Bar */
-  .nav-logo{
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
-  #logo{
-    list-style: none;
-    text-decoration: none;
-  }
-
-  #menu a{
-    border-bottom: none;
-    transition: .3s;
-  }
-
-  .dropDown{
-    height: 50px;
-    line-height: 35px;
-    display: none;
-    font-size: 15px;
-  }
-
-  #menu:hover .dropDown{
-    display: block;
-    position: fixed;
-    height: 10.5em;
-    background-color: #ececec;
-  }
-
-  #menu:hover .dropDown li{
-    padding: 2px 5px;
-  }
-
-  .nav-links{
-    display: flex;
-    justify-content: space-between;
-    width: 36%;
-    list-style: none;
-  }
-
-  .nav-links a{
-    text-decoration: none;
-    color: black;
-    font-size: 9px;
-    text-transform: uppercase;
-    transition: .3s;
-    padding-bottom: 10px;
-  }
-
-  .nav-links a:hover{
-    border-bottom: 5px solid black;
-  }
-
-  .icons{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    width: 20%;
-  }
-
-  .icons i{
-    color: black;
-    font-size: 12px;
-  }
-
-  /* Page Description */
-  .page-description{
-    font-size: 1.0em;
-    font-weight: bold;
-    margin: 2rem 0px;
-  }
-
-  /* Second Container */
-  .second-container{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .second-description{
-    width: 100%;
-  }
-
-  .second-container h1{
-    font-size: 2.0em;
-    text-align: left;
-    letter-spacing: 1.1px;
-    font-weight: bold;
-  }
-
-  .second-container p{
-    font-size: 14px;
-    margin-top: 1rem;
-    width: 80%;
-    letter-spacing: 1.2px;
-  }
-
-  .second-container img{
-    width: 275px;
-    height: 225px;
-  }
-
-  /* Question Container */
-  .question-container{
-    margin: 2em 0px;
-  }
-
-  .question-container h1{
-    font-size: 1.5em;
-  }
-
-  .products-container img{
-    width: 50px;
-    height: 50px;
-  }
-
-  /*Products Container */
-  .products-container{
-    display: flex;
-    margin: 3em 0px;
-    justify-content: space-around;
-  }
-
-  .product{
-    margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .product h4{
-    margin-top: 1em;
-    font-size: 1.0rem;
-  }
-
-  /* Products Showcase */
-  .product-showcase{
-    margin-top: 8em;
-    height: 0vh;
-    display: flex;
-    cursor: pointer;
-  }
-
-  .prodDesc{
-    font-size: 14px;
-    width: 80%;
-    text-align: center;
-  }
-
-  .product1-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #F7CAC9;
-    background-position: 50% 50%;
-
-  }
-
-  .product2-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #EFC050;
-    background-position: 50% 50%;
-  }
-
-  .product3-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #9BA17B;
-    background-position: 50% 50%;
-  }
-
-  .product4-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #AEB6CF;
-    background-position: 50% 50%;
-  }
-};
-
-/*Medium devices (tablets) */
-@media (max-width: 768px) {
-  .main-container{
-    height: 75vh;
-    margin: 0px 7rem;
-  }
-
-  /* Nav Bar */
-  .nav-logo{
-    font-size: 1.0em;
-    text-transform: uppercase;
-  }
-
-  #logo{
-    list-style: none;
-    text-decoration: none;
-  }
-
-  #menu a{
-    border-bottom: none;
-    transition: .3s;
-  }
-
-  .dropDown{
-    height: 50px;
-    line-height: 35px;
-    display: none;
-    font-size: 15px;
-  }
-
-  #menu:hover .dropDown{
-    display: block;
-    position: fixed;
-    height: 10.5em;
-    background-color: #ececec;
-  }
-
-  #menu:hover .dropDown li{
-    padding: 2px 5px;
-  }
-
-  .nav-links{
-    display: flex;
-    justify-content: space-between;
-    width: 35%;
-    list-style: none;
-  }
-
-  .nav-links a{
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    text-transform: uppercase;
-    transition: .3s;
-    padding-bottom: 10px;
-  }
-
-  .nav-links a:hover{
-    border-bottom: 5px solid black;
-  }
-
-  .icons{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    width: 15%;
-  }
-
-  .icons i{
-    color: black;
-    font-size: 1em;
-  }
-
-  /* Page Description */
-  .page-description{
-    font-size: 1.1em;
-    font-weight: bold;
-    margin: 2rem 0px;
-  }
-
-  /* Second Container */
-  .second-container{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .second-description{
-    width: 100%;
-  }
-
-  .second-container h1{
-    font-size: 2.0em;
-    text-align: left;
-    letter-spacing: 1.1px;
-    font-weight: bold;
-  }
-
-  .second-container p{
-    font-size: 14px;
-    margin-top: 1rem;
-    width: 80%;
-    letter-spacing: 1.2px;
-  }
-
-  .second-container img{
-    width: 275px;
-    height: 225px;
-  }
-
-  /* Question Container */
-  .question-container{
-    margin: 2em 0px;
-  }
-
-  .question-container h1{
-    font-size: 1.5em;
-  }
-
-  .products-container img{
-    width: 50px;
-    height: 50px;
-  }
-
-  /*Products Container */
-  .products-container{
-    display: flex;
-    margin: 3em 0px;
-    justify-content: space-around;
-  }
-
-  .product{
-    margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .product h4{
-    margin-top: 1em;
-    font-size: 1.0rem;
-  }
-
-  /* Products Showcase */
-  .product-showcase{
-    margin-top: 8em;
-    height: 0vh;
-    display: flex;
-    cursor: pointer;
-  }
-
-  .prodDesc{
-    font-size: 14px;
-    width: 80%;
-    text-align: center;
-  }
-
-  .product1-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #F7CAC9;
-    background-position: 50% 50%;
-
-  }
-
-  .product2-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #EFC050;
-    background-position: 50% 50%;
-  }
-
-  .product3-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #9BA17B;
-    background-position: 50% 50%;
-  }
-
-  .product4-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #AEB6CF;
-    background-position: 50% 50%;
-  }
-};
-
-/*Large devices (laptops, 1024px and up) */
-@media (max-width: 1024px) {
-  .main-container{
-    height: 90vh;
-    margin: 0px 10rem;
-  }
-
-  /* Nav Bar */
-  .nav-logo{
-    font-size: 1.2em;
-    text-transform: uppercase;
-  }
-
-  #logo{
-    list-style: none;
-    text-decoration: none;
-  }
-
-  #menu a{
-    border-bottom: none;
-    transition: .3s;
-  }
-
-  .dropDown{
-    height: 50px;
-    line-height: 35px;
-    display: none;
-    font-size: 15px;
-  }
-
-  #menu:hover .dropDown{
-    display: block;
-    position: fixed;
-    height: 10.5em;
-    background-color: #ececec;
-  }
-
-  #menu:hover .dropDown li{
-    padding: 2px 5px;
-  }
-
-  .nav-links{
-    display: flex;
-    justify-content: space-between;
-    width: 35%;
-    list-style: none;
-  }
-
-  .nav-links a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.0em;
-    text-transform: uppercase;
-    transition: .3s;
-    padding-bottom: 10px;
-  }
-
-  .nav-links a:hover{
-    border-bottom: 5px solid black;
-  }
-
-  .icons{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    width: 10%;
-  }
-
-  .icons i{
-    color: black;
-    font-size: 1.1em;
-  }
-
-  /* Page Description */
-  .page-description{
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 2rem 0px;
-  }
-
-  /* Second Container */
-  .second-container{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .second-description{
-    width: 100%;
-  }
-
-  .second-container h1{
-    font-size: 2.2em;
-    text-align: left;
-    letter-spacing: 1.1px;
-    font-weight: bold;
-  }
-
-  .second-container p{
-    font-size: 1.1em;
-    margin-top: 2rem;
-    width: 80%;
-    letter-spacing: 1.2px;
-  }
-
-  .second-container img{
-    width: 350px;
-    height: 300px;
-  }
-
-  /* Question Container */
-  .question-container{
-    margin: 2em 0px;
-  }
-
-  .question-container h1{
-    font-size: 1.5em;
-  }
-
-  .products-container img{
-    width: 50px;
-    height: 50px;
-  }
-
-  /*Products Container */
-  .products-container{
-    display: flex;
-    margin: 5em 0px;
-    justify-content: space-around;
-  }
-
-  .product{
-    margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .product h4{
-    margin-top: 2rem;
-    font-size: 1.2rem;
-  }
-
-  /* Products Showcase */
-  .product-showcase{
-    margin-top: 8em;
-    height: 10vh;
-    display: flex;
-    cursor: pointer;
-  }
-
-  .prodDesc{
-    font-size: 16px;
-  }
-
-  .product1-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #F7CAC9;
-    background-position: 50% 50%;
-
-  }
-
-  .product2-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #EFC050;
-    background-position: 50% 50%;
-  }
-
-  .product3-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #9BA17B;
-    background-position: 50% 50%;
-  }
-
-  .product4-container{
-    height: 40vh;
-    width: 50vh;
-    background: url('/img/testbottle.webp') no-repeat #AEB6CF;
-    background-position: 50% 50%;
-  }
-};
-
-/*Extra Large devices (Large Laptops, 1440px and up) */
-@media (max-width: 1440px) {
-  .main-container{
-    height: 90vh;
-    margin: 0px 10rem;
+/* Mobile -> Large */
+@media only screen and (max-width: 375px){
+  body{
+    overflow-x: hidden; /* Removes the scroll from transform */
   }
 
   /* Nav Bar */
   nav{
-    min-height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 8vh;
   }
 
-  .nav-logo{
-    font-size: 1.5em;
-    text-transform: uppercase;
-  }
 
   #logo{
-    list-style: none;
+    font-size: .8em;
     text-decoration: none;
     color: black;
   }
 
   .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #ececec;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(100%); /* Moves container off the screen */
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+  }
+
+  .nav-links li{
+    list-style: none;
+    opacity: 0;
+  }
+
+  .burger-menu{
+    cursor: pointer;
+  }
+
+  .burger-menu div{
+    width: 1.3em;
+    height: .3em;
+    background-color: black;
+    margin: .2em;
+    transition: all 0.3s ease;
+  }
+
+  .nav-active{
+    transform: translateX(0%); /* Class given to .burger-menu when clicking burger menu to move container back */
+  }
+
+  @keyframes navLinkFade {
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  /* Burger Animation */
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2{
+    opacity: 0;
+  }
+
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Page description */
+  .page-description{
+    text-align: left;
+    padding: 1.4em 0px;
+    font-size: 1em;
+    font-weight: 800;
+  }
+
+  .pageSpan{
+    color: #006400;
+    font-weight: bold;
+  }
+
+  /* Showcase */
+  .showcase-description h1{
+    padding-bottom: .6em;
+    font-size: 2.2em;
+  }
+
+  .showcase-description p{
+    font-size: 1.3em;
+    padding-bottom: 2em;
+  }
+
+  .showcase-photo img{
+    width: 100%;
+    height: auto;
+  }
+
+  /* Questions Container */
+  .question-container h1{
+    padding: 1.3em 0px;
+    font-size: 1.9em;
+  }
+
+  .product{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .question-container img{
+    width: 9em;
+    height: 9em;
+    margin: 0 auto;
+  }
+
+  .product h4{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1.2em 0px
+  }
+
+  /* Featured Products Container */
+  .featuredProducts-container{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .featuredProducts-container h1{
+    padding: 1.3em 0px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .featuredProduct{
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  .featuredProduct img{
+    margin: 5em 0px;
+  }
+
+  .position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 1.7em;
+    font-weight: 600;
+  }
+
+  .featuredHair{
+    background-color: #F7CAC9;
+  }
+
+  .featuredScents{
+    background-color: #EFC050;
+  }
+
+  .featuredSkin{
+    background-color: #9BA17B;
+  }
+
+  .featuredAccessories{
+    background-color: #AEB6CF;
+  }
+}
+
+@media only screen and (min-width: 650px){
+  body{
+    overflow-x: hidden; /* Removes the scroll from transform */
+  }
+  /* Showcase */
+  .showcase-description h1{
+    padding-bottom: .6em;
+    font-size: 3em;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px){
+  body{
+    overflow-x: hidden; /* Removes the scroll from transform */
+  }
+  /* Nav Bar */
+  nav{
     display: flex;
     justify-content: space-between;
-    width: 55%;
+    align-items: center;
+    height: 8vh;
+  }
+
+
+  #logo{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #ececec;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(100%); /* Moves container off the screen */
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+  }
+
+  .nav-links li{
+    list-style: none;
+    opacity: 0;
+  }
+
+  .burger-menu{
+    cursor: pointer;
+  }
+
+  .burger-menu div{
+    width: 1.3em;
+    height: .3em;
+    background-color: black;
+    margin: .2em;
+    transition: all 0.3s ease;
+  }
+
+  .nav-active{
+    transform: translateX(0%); /* Class given to .burger-menu when clicking burger menu to move container back */
+  }
+
+  @keyframes navLinkFade {
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  /* Burger Animation */
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2{
+    opacity: 0;
+  }
+
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Page description */
+  .page-description{
+    text-align: left;
+    padding: 1.2em 0px;
+    font-size: 1.2em;
+    font-weight: 800;
+  }
+
+  .pageSpan{
+    color: #006400;
+    font-weight: bold;
+  }
+
+  /* Showcase */
+  .showcase-description h1{
+    padding-bottom: .6em;
+    font-size: 3.7em;
+  }
+
+  .showcase-description p{
+    font-size: 1.5em;
+    padding-bottom: 2em;
+  }
+
+  .showcase-photo img{
+    width: 100%;
+    height: auto;
+  }
+
+  /* Questions Container */
+  .products-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .question-container h1{
+    padding: 1.3em 0px;
+  }
+
+  .question-container img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .product h4{
+    font-size: 1.1em;
+    text-align: center;
+    padding: 1.2em 0px
+  }
+
+  /* Featured Products Container */
+  .featuredProducts-container{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .featuredProducts-container h1{
+    padding: 1.3em 0px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .featuredProduct{
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  .featuredProduct img{
+    margin: 5em 0px;
+  }
+
+  .position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 1.7em;
+    font-weight: 600;
+  }
+
+  .featuredHair{
+    background-color: #F7CAC9;
+  }
+
+  .featuredScents{
+    background-color: #EFC050;
+  }
+
+  .featuredSkin{
+    background-color: #9BA17B;
+  }
+
+  .featuredAccessories{
+    background-color: #AEB6CF;
+  }
+}
+
+
+@media only screen and (min-width: 769px){
+  body{
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  /* Nav Bar */
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+  }
+
+  #logo{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+  }
+
+  .burger-menu{
+    display: none;
+  }
+
+  nav ul{
+    list-style: none;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
     list-style: none;
   }
 
@@ -854,97 +440,1037 @@ hr{
     text-decoration: none;
     color: black;
     font-size: 1.2em;
-    text-transform: uppercase;
-    transition: .3s;
-    padding-bottom: 10px;
+  }
+
+  .nav-links li{
+    transition: .4s;
+    border-bottom: 3px solid transparent;
+  }
+
+  .nav-links li:hover{
+    border-bottom: 3px solid black;
+    cursor: pointer;
   }
 
   .icons{
     display: flex;
     justify-content: space-between;
-    cursor: pointer;
-    width: 8%;
+    width: 12%;
+    font-size: 1.2em;
+    text-decoration: none;
   }
 
-  .icons i{
+  .icons a{
+    color: black;
+  }
+
+  .icons:hover{
+    cursor: pointer;
+  }
+
+  hr{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  /* Page description */
+  .page-description{
+    text-align: left;
+    padding: 1.2em 0px;
+    font-size: 1em;
+    font-weight: 800;
+  }
+
+  .pageSpan{
+    color: #006400;
+    font-weight: bold;
+  }
+
+  /* Showcase */
+  .showcase-description h1{
+    padding-bottom: .4em;
+    font-size: 3em;
+    width: 100%;
+  }
+
+  .showcase-description p{
+    font-size: 1.7em;
+    width: 90%;
+  }
+
+  .showcase-photo img{
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+    padding-top: 2em;
+  }
+
+  /* Questions Container */
+  .products-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .question-container h1{
+    padding: 1.3em 0px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .question-container img{
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+  }
+
+  .question-container img:hover{
+    animation: wiggle 1s infinite;
+  }
+
+  @keyframes wiggle {
+      0%{transform: rotate(0deg)}
+      2%{transform: rotate(-5deg)}
+      5%{transform: rotate(5deg)}
+      100%{transform: rotate(0deg)}
+  }
+
+  .product h4{
+    font-size: 1em;
+    text-align: center;
+    padding: 1.2em 0px
+  }
+
+  /* Featured Products Container */
+  .featuredProducts-container{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .featuredProducts-container h1{
+    padding: 1.3em 0px;
+    width: 100%;
+  }
+
+  .featuredProduct{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+    text-align: center;
+  }
+
+
+  .featuredProduct img{
+    margin: 3em 0px;
+  }
+
+  .position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  /* Featured Products */
+  .featuredHair,
+  .featuredScents,
+  .featuredSkin,
+  .featuredAccessories{
+    transition: .3s
+  }
+
+  .featuredHair{
+    background-color: #F7CAC9;
+  }
+
+  .featuredScents{
+    background-color: #EFC050;
+  }
+
+  .featuredSkin{
+    background-color: #9BA17B;
+  }
+
+  .featuredAccessories{
+    background-color: #AEB6CF;
+  }
+
+  .featuredHair:hover,
+  .featuredScents:hover,
+  .featuredSkin:hover,
+  .featuredAccessories:hover
+  {
+    transform: scale(.9);
+    cursor: pointer;
+  }
+}
+
+/* Large Screen */
+@media only screen and (min-width: 1024px){
+  /* Nav Bar */
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+  }
+
+  #logo{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+  }
+
+  .burger-menu{
+    display: none;
+  }
+
+  nav ul{
+    list-style: none;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    list-style: none;
+  }
+
+  .nav-links a{
+    text-decoration: none;
     color: black;
     font-size: 1.2em;
   }
 
-  /* Page Description */
-  .page-description{
-    font-size: 1.3em;
-    font-weight: bold;
-    margin: 2rem 0px;
+  .nav-links li{
+    transition: .4s;
+    border-bottom: 3px solid transparent;
   }
 
-  /* Second Container */
-  .second-description{
-    width: 50%;
-  }
-
-  .second-container h1{
-    font-size: 3.2em;
-    text-align: left;
-    letter-spacing: 1.1px;
-    font-weight: bold;
-  }
-
-  .second-container p{
-    font-size: 1.4em;
-    margin-top: 3rem;
-    width: 80%;
-    letter-spacing: 1.2px;
-  }
-
-  .second-container img{
-    width: 550px;
-    height: 400px;
-  }
-
-  /* Question Container */
-  .question-container{
-    margin: 3em 0px;
-  }
-
-  .question-container h1{
-    font-size: 2.0em;
-  }
-
-  /* Products Showcase */
-  .product-showcase{
-    margin-top: 7em;
-    height: 10vh;
-    display: flex;
+  .nav-links li:hover{
+    border-bottom: 3px solid black;
     cursor: pointer;
   }
 
-  .product1-container{
-    height: 30vh;
-    width: 40vh;
-    background: url('/img/testbottle.webp') no-repeat #F7CAC9;
-    background-position: 50% 50%;
-
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+    font-size: 1.2em;
+    text-decoration: none;
   }
 
-  .product2-container{
-    height: 30vh;
-    width: 40vh;
-    background: url('/img/testbottle.webp') no-repeat #EFC050;
-    background-position: 50% 50%;
+  .icons a{
+    color: black;
   }
 
-  .product3-container{
-    height: 30vh;
-    width: 40vh;
-    background: url('/img/testbottle.webp') no-repeat #9BA17B;
-    background-position: 50% 50%;
+  .icons:hover{
+    cursor: pointer;
   }
 
-  .product4-container{
-    height: 30vh;
-    width: 40vh;
-    background: url('/img/testbottle.webp') no-repeat #AEB6CF;
-    background-position: 50% 50%;
+  hr{
+    width: 100%;
+    margin: 0 auto;
   }
-};
+
+
+  /* Page description */
+  .page-description{
+    text-align: left;
+    padding: 1.2em 0px;
+    font-size: 1em;
+    font-weight: 800;
+  }
+
+  .pageSpan{
+    color: #006400;
+    font-weight: bold;
+  }
+
+  /* Showcase */
+  .showcase-container{
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .showcase-description h1{
+    padding-bottom: .4em;
+    font-size: 2.5em;
+    width: 100%;
+  }
+
+  .showcase-description p{
+    font-size: 1.5em;
+    width: 90%;
+  }
+
+  .showcase-photo img{
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+  }
+
+  /* Questions Container */
+  .products-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .question-container h1{
+    padding: 1.3em 0px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .question-container img{
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+  }
+
+  .product h4{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1.2em 0px
+  }
+
+  /* Featured Products Container */
+  .featuredProducts-container{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .featuredProducts-container h1{
+    padding: 1.3em 0px;
+    width: 100%;
+  }
+
+  .featuredProduct{
+    width: 25%;
+    height: auto;
+    float: left;
+    position: relative;
+    text-align: center;
+  }
+
+
+  .featuredProduct img{
+    margin: 3em 0px;
+  }
+
+  .position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  /* Featured Products */
+  .featuredHair,
+  .featuredScents,
+  .featuredSkin,
+  .featuredAccessories{
+    transition: .3s
+  }
+
+  .featuredHair:hover,
+  .featuredScents:hover,
+  .featuredSkin:hover,
+  .featuredAccessories:hover
+  {
+    transform: scale(.9);
+    cursor: pointer;
+  }
+}
+
+/* Monitor Screens */
+@media only screen and (min-width: 1220px){
+  /* Nav Bar */
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+  }
+
+  .burger-menu{
+    display: none;
+  }
+
+  nav ul{
+    list-style: none;
+  }
+
+  #logo{
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    list-style: none;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+  }
+
+  .nav-links li{
+    transition: .5s;
+    border-bottom: 3px solid transparent;
+  }
+
+  .nav-links li:hover{
+    border-bottom: 3px solid black;
+    cursor: pointer;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+
+  .icons a{
+    color: black;
+  }
+
+  .icons:hover{
+    cursor: pointer;
+  }
+
+
+  hr{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  /* Page description */
+  .page-description{
+    text-align: left;
+    padding: 1.2em 0px;
+    font-size: 1em;
+    font-weight: 800;
+  }
+
+  /* Showcase */
+  .showcase-container{
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .showcase-description h1{
+    padding-bottom: .4em;
+    font-size: 3.0em;
+    width: 80%;
+  }
+
+  .showcase-description p{
+    font-size: 1.6em;
+    width: 90%;
+  }
+
+  .showcase-photo img{
+    width: 100%;
+    max-width: 2200px;
+    height: auto;
+  }
+
+  /* Questions Container */
+  .products-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .question-container h1{
+    padding: 1.3em 0px;
+  }
+
+  .product{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .question-container img{
+    width: 11em;
+    height: 11em;
+    margin: 0 auto;
+  }
+
+  .product h4{
+    font-size: 1.3em;
+    text-align: center;
+    padding: 1.2em 0px
+  }
+
+  /* Featured Products */
+  .featuredHair,
+  .featuredScents,
+  .featuredSkin,
+  .featuredAccessories{
+    transition: .3s
+  }
+
+  .featuredHair:hover,
+  .featuredScents:hover,
+  .featuredSkin:hover,
+  .featuredAccessories:hover
+  {
+    transform: scale(.9);
+    cursor: pointer;
+  }
+
+  .featuredHair{
+    background-color: #F7CAC9;
+  }
+
+  .featuredScents{
+    background-color: #EFC050;
+  }
+
+  .featuredSkin{
+    background-color: #9BA17B;
+  }
+
+  .featuredAccessories{
+    background-color: #AEB6CF;
+  }
+}
+
+/* Monitor Screens */
+@media only screen and (min-width: 1500px){
+  /* Nav Bar */
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+  }
+
+  .burger-menu{
+    display: none;
+  }
+
+  nav ul{
+    list-style: none;
+  }
+
+  #logo{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    list-style: none;
+  }
+
+  .nav-links a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-links li{
+    transition: .5s;
+    border-bottom: 5px solid transparent;
+  }
+
+  .nav-links li:hover{
+    border-bottom: 5px solid black;
+    cursor: pointer;
+  }
+
+  hr{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  /* Page description */
+  .page-description{
+    text-align: left;
+    padding: 1.2em 0px;
+    font-size: 1.2em;
+    font-weight: 800;
+  }
+
+  /* Showcase */
+  .showcase-container{
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .showcase-description h1{
+    padding-bottom: .4em;
+    font-size: 3.6em;
+    width: 80%;
+  }
+
+  .showcase-description p{
+    font-size: 1.6em;
+    width: 70%;
+  }
+
+  .showcase-photo img{
+    width: 100%;
+    max-width: 1700px;
+    height: auto;
+  }
+
+  /* Questions Container */
+  .products-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .question-container h1{
+    padding: 1.3em 0px;
+  }
+
+  .product{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .question-container img{
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+  }
+
+  .question-container img:hover{
+    animation: wiggle 1s infinite;
+  }
+
+  @keyframes wiggle {
+      0%{transform: rotate(0deg)}
+      2%{transform: rotate(-5deg)}
+      5%{transform: rotate(5deg)}
+      100%{transform: rotate(0deg)}
+  }
+
+  .product h4{
+    font-size: 1.3em;
+    text-align: center;
+    padding: 1.2em 0px
+  }
+
+  /* Featured Products */
+  .position{
+    font-size: 1.3em;
+  }
+
+  .featuredHair,
+  .featuredScents,
+  .featuredSkin,
+  .featuredAccessories{
+    transition: .3s
+  }
+
+  .featuredHair:hover,
+  .featuredScents:hover,
+  .featuredSkin:hover,
+  .featuredAccessories:hover
+  {
+    transform: scale(.9);
+    cursor: pointer;
+  }
+
+  .featuredHair{
+    background-color: #F7CAC9;
+  }
+
+  .featuredScents{
+    background-color: #EFC050;
+  }
+
+  .featuredSkin{
+    background-color: #9BA17B;
+  }
+
+  .featuredAccessories{
+    background-color: #AEB6CF;
+  }
+}
+
+/* Extra Large Screens */
+@media only screen and (min-width: 1900px){
+  /* Nav Bar */
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+  }
+
+  .burger-menu{
+    display: none;
+  }
+
+  nav ul{
+    list-style: none;
+  }
+
+  #logo{
+    font-size: 1.7em;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    list-style: none;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+  }
+
+  .nav-links li{
+    transition: .5s;
+    border-bottom: 5px solid transparent;
+  }
+
+  .nav-links li:hover{
+    border-bottom: 5px solid black;
+    cursor: pointer;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+  .icons a{
+    color: black;
+  }
+
+  .icons:hover{
+    cursor: pointer;
+  }
+
+
+  hr{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  /* Page description */
+  .page-description{
+    text-align: left;
+    padding: 1.3em 0px;
+    font-size: 1.6em;
+    font-weight: 800;
+  }
+
+  /* Showcase */
+  .showcase-container{
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .showcase-description h1{
+    padding-bottom: .4em;
+    font-size: 4em;
+    width: 80%;
+  }
+
+  .showcase-description p{
+    font-size: 2.4em;
+    width: 70%;
+  }
+
+  .showcase-photo img{
+    width: 100%;
+    max-width: 175em;
+    height: auto;
+  }
+
+  /* Questions Container */
+  .products-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .question-container h1{
+    padding: 1.3em 0px;
+    font-size: 2.6em;
+  }
+
+  .question-container img{
+    width: 13em;
+    height: 13em;
+    margin: 0 auto;
+  }
+
+  .question-container img:hover{
+    animation: wiggle 1s infinite;
+  }
+
+  @keyframes wiggle {
+      0%{transform: rotate(0deg)}
+      2%{transform: rotate(-5deg)}
+      5%{transform: rotate(5deg)}
+      100%{transform: rotate(0deg)}
+  }
+
+  .product h4{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1.2em 0px
+  }
+
+  /* Featured Products */
+  .featuredProducts-container{
+    font-size: 1.3em;
+  }
+
+  .featuredHair,
+  .featuredScents,
+  .featuredSkin,
+  .featuredAccessories{
+    transition: .3s
+  }
+
+  .featuredHair:hover,
+  .featuredScents:hover,
+  .featuredSkin:hover,
+  .featuredAccessories:hover
+  {
+    transform: scale(.9);
+    cursor: pointer;
+  }
+
+  .featuredHair{
+    background-color: #F7CAC9;
+  }
+
+  .featuredScents{
+    background-color: #EFC050;
+  }
+
+  .featuredSkin{
+    background-color: #9BA17B;
+  }
+
+  .featuredAccessories{
+    background-color: #AEB6CF;
+  }
+}
+
+@media only screen and (min-width: 2200px){
+  /* Nav Bar */
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+  }
+
+  .burger-menu{
+    display: none;
+  }
+
+  nav ul{
+    list-style: none;
+  }
+
+  #logo{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    list-style: none;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+  }
+
+  .nav-links li{
+    transition: .5s;
+    border-bottom: 5px solid transparent;
+  }
+
+  .nav-links li:hover{
+    border-bottom: 5px solid black;
+    cursor: pointer;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+  .icons a{
+    color: black;
+  }
+
+  .icons:hover{
+    cursor: pointer;
+  }
+
+
+  hr{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  /* Page description */
+  .page-description{
+    text-align: left;
+    padding: 1.3em 0px;
+    font-size: 1.8em;
+    font-weight: 800;
+  }
+
+  /* Showcase */
+  .showcase-container{
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .showcase-description h1{
+    padding-bottom: .4em;
+    font-size: 4.7em;
+    width: 80%;
+  }
+
+  .showcase-description p{
+    font-size: 2.7em;
+    width: 70%;
+  }
+
+  .showcase-photo img{
+    width: 100%;
+    max-width: 200em;
+    height: auto;
+  }
+
+  /* Questions Container */
+  .products-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .question-container h1{
+    padding: 1.3em 0px;
+    font-size: 2.6em;
+  }
+
+  .question-container img{
+    width: 13em;
+    height: 13em;
+    margin: 0 auto;
+  }
+
+  .question-container img:hover{
+    animation: wiggle 1s infinite;
+  }
+
+  @keyframes wiggle {
+      0%{transform: rotate(0deg)}
+      2%{transform: rotate(-5deg)}
+      5%{transform: rotate(5deg)}
+      100%{transform: rotate(0deg)}
+  }
+
+  .product h4{
+    font-size: 1.8em;
+    text-align: center;
+    padding: 1.2em 0px
+  }
+
+  /* Featured Products */
+  .featuredProducts-container{
+    font-size: 1.5em;
+  }
+
+  .featuredHair,
+  .featuredScents,
+  .featuredSkin,
+  .featuredAccessories{
+    transition: .3s
+  }
+
+  .featuredHair:hover,
+  .featuredScents:hover,
+  .featuredSkin:hover,
+  .featuredAccessories:hover
+  {
+    transform: scale(.9);
+    cursor: pointer;
+  }
+
+  .featuredHair{
+    background-color: #F7CAC9;
+  }
+
+  .featuredScents{
+    background-color: #EFC050;
+  }
+
+  .featuredSkin{
+    background-color: #9BA17B;
+  }
+
+  .featuredAccessories{
+    background-color: #AEB6CF;
+  }
+}
