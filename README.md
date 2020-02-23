@@ -1,2 +1,11 @@
-# BodyShop
-Sample website for a fictional boutique beauty supplies store. Made using HTML, CSS, and Javascript.
+# The Body Shop
+
+Fictional boutique beauty supplies store.
+
+## Link to Live Site
+
+### Built With
+
+* HTML
+* CSS
+* Javascript
