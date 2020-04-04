@@ -2,7 +2,9 @@
 
 Fictional boutique beauty supplies store.
 
-## Link to Live Site
+## Screenshot
+
+![photo-of-site](https://github.com/codewithsrobins1/BodyShop/blob/master/readmeImg.PNG?raw=true)
 
 ### Built With
 
